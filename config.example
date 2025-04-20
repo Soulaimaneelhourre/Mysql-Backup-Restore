@@ -1,0 +1,16 @@
+# Example configuration file for mysql_restore.sh
+# Copy to 'config' and edit as needed
+
+SOURCE_USER="admin"
+SOURCE_IP="192.168.1.100"
+SOURCE_DIR="/backups/mysql"
+TARGET_USER="deploy"
+TARGET_IP="192.168.1.200"
+TARGET_DIR="/tmp/backups"
+MYSQL_USER="root"
+MYSQL_PASS="securepassword"
+NEW_DB_NAME="production_restore"
+ENV_FILE="/var/www/app/.env"
+DB_NAME_VAR="DB_DATABASE"
+MAX_RETRIES=5
+RETRY_DELAY=15

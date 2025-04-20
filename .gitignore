@@ -1,0 +1,8 @@
+# Log files
+*.log
+
+# Config files with secrets
+config
+
+# Temporary files
+*.tmp
